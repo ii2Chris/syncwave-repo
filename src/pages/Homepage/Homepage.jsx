@@ -30,7 +30,7 @@ const HomePage = () => {
 
       {/* Main Content */}
       <main className="main-content">
-        {/* main Section */}
+        {/* Hero Section */}
         <div className="hero">
           <div className="hero-content">
             <h1>
