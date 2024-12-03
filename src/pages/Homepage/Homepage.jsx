@@ -21,9 +21,8 @@ const HomePage = () => {
       {/* Sidebar Navigation */}
       <nav className="sidebar">
         <div className="nav-item">
-          {" "}
           <div className="nav-icon profile-icon"></div>
-          <span>PROFILE</span>
+          <a href="/profile">PROFILE</a>
         </div>
         <div className="nav-item">
           <div className="nav-icon chats-icon"></div>

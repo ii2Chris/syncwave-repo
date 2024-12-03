@@ -1,0 +1,95 @@
+/* Page-Background */
+.profile-page-container {
+  display: flex;
+  background-image: linear-gradient(Black, #1f1b24);
+  color: #fff;
+  min-height: 100vh; /* Ensures it covers the full height */
+  margin-top: 56px;
+}
+
+/* Profile Styling */
+.profile-form {
+  background-color: rgba(29, 18, 36, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.profile-form h2 {
+  color: #bb86fc;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form textarea,
+.profile-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bb86fc;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.profile-form button {
+  background-color: #bb86fc;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-display button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #7a57a5;
+}
+
+.profile-display button:hover {
+  background-color: darkgray;
+}
+
+.profile-display {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.profile-form-container {
+  flex: 1; /* Takes up the remaining space */
+  padding: 30px;
+}
+
+.profile-form h2,
+.profile-display h2 {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+  object-fit: cover;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Turns icon black to white */
+  cursor: pointer;
+}
