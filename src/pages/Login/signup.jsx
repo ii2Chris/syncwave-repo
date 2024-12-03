@@ -10,7 +10,7 @@ const Signup = () => {
 
       <div className="poster">
         <div className="login-header">
-          <h2>Welcome Back!</h2>
+          <h2>Ready to Join the Crew?</h2>
           <h3>Sign Up to get latest access to all concerts!</h3>
           <p>Ready to Rock?</p>
         </div>
@@ -18,12 +18,22 @@ const Signup = () => {
           <form className="login-form">
             <input
               type="email"
-              placeholder="Your username or email"
+              placeholder="Enter Email"
+              className="form-input"
+            />
+            <input
+              type="Username"
+              placeholder="Enter Username"
               className="form-input"
             />
             <input
               type="password"
-              placeholder="Your password"
+              placeholder="Enter Password"
+              className="form-input"
+            />
+            <input
+              type="confirm-password"
+              placeholder="Re-enter Password"
               className="form-input"
             />
 
@@ -34,7 +44,7 @@ const Signup = () => {
             <p className="change-site">
               Already have an account?
               <Link to="/login" className="switch-button">
-                Login in
+                Login
               </Link>
             </p>
           </form>

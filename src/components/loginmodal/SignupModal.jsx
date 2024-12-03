@@ -1,8 +1,8 @@
-// LoginModal.jsx
+// SignupModal.jsx
 import React from "react";
 import "./AuthModal.css";
 
-const LoginModal = ({ isOpen, onClose, onSwitchToSignup }) => {
+const SignupModal = ({ isOpen, onClose, onSwitchToLogin }) => {
   if (!isOpen) return null;
 
   return (
@@ -13,35 +13,45 @@ const LoginModal = ({ isOpen, onClose, onSwitchToSignup }) => {
         </button>
 
         <div className="modal-header">
-          <h2>Welcome Back!</h2>
-          <h3>Login to your account</h3>
+          <h2>Ready to Join the Crew?</h2>
+          <h3>Sign Up to get latest access to all concerts!</h3>
           <p>Ready to Rock?</p>
         </div>
 
         <div className="modal-form-container">
           <form className="auth-form">
             <input
+              type="email"
+              placeholder="Enter Email"
+              className="form-input"
+            />
+            <input
               type="text"
-              placeholder="Your Username or Email"
+              placeholder="Enter Username"
               className="form-input"
             />
             <input
               type="password"
-              placeholder="Your Password"
+              placeholder="Enter Password"
+              className="form-input"
+            />
+            <input
+              type="password"
+              placeholder="Re-enter Password"
               className="form-input"
             />
             <button type="submit" className="submit-button">
-              Log In
+              Sign Up
             </button>
 
             <div className="change-auth">
-              Don't have an account?
+              Already have an account?
               <button
                 type="button"
                 className="switch-button"
-                onClick={onSwitchToSignup}
+                onClick={onSwitchToLogin}
               >
-                Sign up
+                Login
               </button>
             </div>
           </form>
@@ -51,4 +61,4 @@ const LoginModal = ({ isOpen, onClose, onSwitchToSignup }) => {
   );
 };
 
-export default LoginModal;
+export default SignupModal;

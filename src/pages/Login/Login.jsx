@@ -18,12 +18,12 @@ const Login = () => {
           <form className="login-form">
             <input
               type="email"
-              placeholder="Your username or email"
+              placeholder="Your Username or Email"
               className="form-input"
             />
             <input
               type="password"
-              placeholder="Your password"
+              placeholder="Your Password"
               className="form-input"
             />
 
