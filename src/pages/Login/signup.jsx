@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/navbar/navbar";
 import "./Auth.css";
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className="auth-container">
       <NavBar />
@@ -11,7 +11,7 @@ const Login = () => {
       <div className="poster">
         <div className="login-header">
           <h2>Welcome Back!</h2>
-          <h3>Login to your account</h3>
+          <h3>Sign Up to get latest access to all concerts!</h3>
           <p>Ready to Rock?</p>
         </div>
         <div className="poster-content">
@@ -28,13 +28,13 @@ const Login = () => {
             />
 
             <button type="submit" className="submit-button">
-              Log In
+              Sign Up
             </button>
 
             <p className="change-site">
-              Dont have an account?
-              <Link to="/signup" className="switch-button">
-                Sign up
+              Already have an account?
+              <Link to="/login" className="switch-button">
+                Login in
               </Link>
             </p>
           </form>
@@ -44,4 +44,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

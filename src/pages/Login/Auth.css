@@ -1,0 +1,60 @@
+.auth-container {
+    min-height: 100vh;
+    background-image: linear-gradient(Black, #1f1b24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 56px;
+  }
+  
+.poster {
+    width: 960px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 8px;
+    background-color: rgba(29, 18, 36, 0.5);
+    padding: 8px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1), 0 1px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 100px;
+}
+
+/* poster-header section */
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* form Styles */
+.poster-content {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 20px; 
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.change-site p {
+    color: whitesmoke;
+    padding-right: 10px;
+}

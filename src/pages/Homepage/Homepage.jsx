@@ -1,20 +1,27 @@
-import { React } from "react";
-import "./HomePage.css";
+import React, { useState } from "react";
+import NavBar from "../../components/navbar/navbar";
+import LoginModal from "../../components/loginmodal/LoginModal";
+import "./Homepage.css";
 
 const HomePage = () => {
+  // Add state for modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const artists = [
     { name: "TEMP", type: "ARTIST", image: "" },
     { name: "TEMP", type: "ARTIST", image: "" },
     { name: "TEMP", type: "ARTIST", image: "" },
     { name: "TEMP", type: "ARTIST", image: "" },
     { name: "TEMP", type: "ARTIST", image: "" },
-    { name: "TEMP", type: "ARTIST", image: "" },
   ];
+
   return (
-    <div className="homepage">
+    <div className="homepage-container">
+      <NavBar onOpenModal={() => setIsModalOpen(true)} />
       {/* Sidebar Navigation */}
       <nav className="sidebar">
         <div className="nav-item">
+          {" "}
           <div className="nav-icon profile-icon"></div>
           <span>PROFILE</span>
         </div>
@@ -40,10 +47,10 @@ const HomePage = () => {
               <span>CREW</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Obcaecati labore libero ipsa velit similique, fugit amet quod
-              minus odio nemo, rerum optio? Corrupti eaque nostrum repudiandae?
-              Ex commodi eum quo!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              delectus, ipsam adipisci unde impedit ratione, praesentium nisi
+              rem illo deserunt ea quis nesciunt necessitatibus enim molestiae
+              sint similique quisquam quae?
             </p>
           </div>
           <button className="near-me-button">NEAR ME</button>
@@ -63,6 +70,7 @@ const HomePage = () => {
           </div>
         </section>
       </main>
+      <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };
